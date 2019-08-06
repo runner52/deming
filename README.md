@@ -1,14 +1,46 @@
 ## What is Heming Prediction?
 
-It is a tool that generates slope and y-intercept of a heming regression based on reading from an input text file
+It is a tool that generates based on reading from an input text file:
 
-## How it works
-To install the package you need to have the following requirements:
+1. slope and y-intercept of a heming regression
+2. predictions based on input value 
+
+## Requirements 
+To run the package successfully you need to have the following requirements:
 
 * Linux OS
 * python 3.7
-* docker
 
-## Install
-shell python3 setup.py
-`git status`
+## How to execute the tool 
+
+In your terminal run:
+`pip3 install python-dateutil`
+`pip3 install DateTime`
+
+Make sure you have an input file with the following format:
+>obesrvaciones
+>yyyy-mm-dd hh:mm y x
+>...
+>predicciones
+>yyyy-mm-dd hh:mm y
+>...
+
+`python3 inputFile outputFile`
+
+
+Note: the input file observations range must not exceed 1 year, otherwise the command won't run. 
+
+The output file will have the following output format:
+1. slope and y intercept values
+2. Mean Absolute Error and Mean Square Error per month for the list of observations based on comparing the true values to the values obtained from the regression line
+3. Predictions of output based on input value
+
+The output file will look like this:
+ 
+>slope y-intercept
+>Month1 mae mse
+>...
+>yyyy-mm-dd y
+
+mae: mean absolute error
+mse: mean square error
