@@ -19,10 +19,15 @@ In your terminal run:
 
 Make sure you have an input file with the following format:
 >obesrvaciones
+
 >yyyy-mm-dd hh:mm y x
+
 >...
+
 >predicciones
+
 >yyyy-mm-dd hh:mm y
+
 >...
 
 `python3 inputFile outputFile`
@@ -38,9 +43,13 @@ The output file will have the following output format:
 The output file will look like this:
  
 >slope y-intercept
+
 >Month1 mae mse
+
 >...
+
 >yyyy-mm-dd y
 
 mae: mean absolute error
+
 mse: mean square error
