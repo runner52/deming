@@ -1,3 +1,4 @@
+#checks for observaciones and predicciones keywords and data
 import sys
 
 def headersFound(fileString):

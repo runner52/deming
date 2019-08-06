@@ -1,3 +1,5 @@
+#calculates values of beta 0 and beta 1
+
 from math import pow, sqrt
 
 def get_slope_yIntercept(observations):

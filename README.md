@@ -15,25 +15,32 @@ To run the package successfully you need to have the following requirements:
 
 In your terminal run:
 `pip3 install python-dateutil`
+
 `pip3 install DateTime`
 
 Make sure you have an input file with the following format:
 >obesrvaciones
 
->yyyy-mm-dd hh:mm y x
+>yyyy-mm-dd hh:mm b a
 
 >...
 
 >predicciones
 
->yyyy-mm-dd hh:mm y
+>yyyy-mm-dd hh:mm a
 
 >...
 
 `python3 inputFile outputFile`
 
 
-Note: the input file observations range must not exceed 1 year, otherwise the command won't run. 
+# Note: 
+* input file example is in 'examples/input.txt'
+* output file example is in 'examples/output.txt'
+* the input file observations range must not exceed 1 year, otherwise the command won't run. 
+* **a**: independent variable value
+* **b**: dependent variable value
+
 
 The output file will have the following output format:
 1. slope and y intercept values
@@ -50,6 +57,7 @@ The output file will look like this:
 
 >yyyy-mm-dd y
 
-mae: mean absolute error
+# Note:
+**mae**: mean absolute error
 
-mse: mean square error
+**mse**: mean square error

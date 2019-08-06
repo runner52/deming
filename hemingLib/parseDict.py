@@ -1,3 +1,4 @@
+#parsing input file to get data of  in each of the sections of observations and predictions
 from dateutil import parser
 
 def parseObservations(observLines):

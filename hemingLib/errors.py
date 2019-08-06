@@ -1,3 +1,4 @@
+#generates values of Mean Absoluate Error and Mean Square Error
 from math import sqrt
 
 def get_monthly_errors(MONTHS):
@@ -18,7 +19,6 @@ def get_monthly_errors(MONTHS):
             predict=MONTHS[i][j]['prediction']
             absValue+= abs( obsrv - predict )
             sqValue+= pow ( absValue, 2 )
-            print('absValue:{}, sqValue:{}'.format(absValue, sqValue))
  #           if monthly_n== len(MONTHS[i-1]):
      #           print(sqValue)
             tot_Obsv+=obsrv
@@ -27,7 +27,6 @@ def get_monthly_errors(MONTHS):
         MAE=100*absValue/tot_Obsv
         root=sqrt (sqValue/monthly_n)
         MSE=100*monthly_n*root/tot_Obsv
-        print('monthly_n:{}, sqValue:{}, absValue:{}'.format(monthly_n, sqValue, absValue))
 
         MAE_Values[i+1]=MAE
         MSE_Values[i+1]=MSE

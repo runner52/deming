@@ -1,3 +1,4 @@
+#parsing input file to split it into observations and predictions blocks
 import re
 
 def getData(observations_Pos, predictions_Pos,inFstring):
@@ -16,14 +17,12 @@ def getData(observations_Pos, predictions_Pos,inFstring):
         temp=[]
         for x in observLines:
             flag=False
-            #remove 
             if bool(re.match("\s+$",x)) or bool(re.match("\t+$",x)) or x=="":
                 flag=True
                     
             if not flag:
                 temp.append(x)
         observLines=temp
-     #   print((observLines))
    
     predictSplit=predictBlock.split("\n")
     temp=[]
@@ -37,7 +36,6 @@ def getData(observations_Pos, predictions_Pos,inFstring):
             if flag==False:
                 temp.append(x)
         predictLines=temp
-    #    print((predictLines))
 
     empty=""
     try:

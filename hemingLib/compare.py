@@ -1,3 +1,4 @@
+#returns observation data split into 30 days periods
 from dateutil.relativedelta import relativedelta
 
 def true_vs_measured_values(observationsDict, slope, y_intercept):
@@ -9,10 +10,8 @@ def true_vs_measured_values(observationsDict, slope, y_intercept):
     key=observationKeys[0]
     start_month=key
     end_month=start_month+relativedelta(months=1)
-    print(sorted(observationKeys))
     for i in range(len(observationKeys)):
         key=observationKeys[i]
-      #  print(key+relativedelta(days=1))       
         if key<=end_month:
 
             speed = int(observationsDict[key]['speed'])

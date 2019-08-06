@@ -1,3 +1,4 @@
+#reading input file and writing data to output file
 import os, sys
 
 def readFile(inFile):
@@ -20,7 +21,6 @@ def write_data_to_file(slope,y_intercept, MAE_dict, MSE_dict,future_dict,outFile
     slope_delimited=float("{0:.2f}".format(slope))
     y_intercept_delimited=float("{0:.2f}".format(y_intercept))
     measurement_keys=list(MAE_dict.keys())
-    print(measurement_keys)
     keyList=list(future_dict.keys())
     
     with open(outFile,'a') as f:
