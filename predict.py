@@ -1,11 +1,4 @@
-#from datetime import datetime,date
-#from datetime import timedelta
-#from dateutil import parser
-#from dateutil.relativedelta import relativedelta
-#from decimal import *
-import sys#, os
-#from math import pow, sqrt
-#import re
+import sys
 from hemingLib.readWrite import readFile, write_data_to_file
 from hemingLib.headerReader import headersFound
 from hemingLib.parseFile import getData
