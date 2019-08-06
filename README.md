@@ -10,6 +10,6 @@ To install the package you need to have the following requirements:
 * docker
 
 ## Install
-´´´shell
+´shell
 python3 setup.py
-´´´
+´
