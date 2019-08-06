@@ -1,26 +1,26 @@
-## What is Heming Prediction?
+# What is Heming Prediction?
 
 It is a tool that generates based on reading from an input text file:
 
 1. slope and y-intercept of a heming regression
 2. predictions based on input value 
 
-## Docker
+# Docker
 You may download the docker image from dockerhub
 
 `docker pull runnner/heming`
 `docker run <image-name> <inputFile> <outputFile>`
 
-# Note: 
+## Note: 
 You might need to run the above commands using sudo
 
-## Requirements 
+# Requirements 
 To run the package successfully you need to have the following requirements:
 
 * Linux OS
 * python 3.7
 
-## How to execute the tool 
+# How to execute the tool 
 
 In your terminal run:
 
@@ -44,7 +44,7 @@ Make sure you have an input file with the following format:
 `python3 inputFile outputFile`
 
 
-# Note: 
+## Note: 
 * input file example is in 'examples/input.txt'
 * output file example is in 'examples/output.txt'
 * the input file observations range must not exceed 1 year, otherwise the command won't run. 
@@ -52,6 +52,7 @@ Make sure you have an input file with the following format:
 * **b**: dependent variable value
 
 
+# Format
 The output file will have the following output format:
 1. slope and y intercept values
 2. Mean Absolute Error and Mean Square Error per month for the list of observations based on comparing the true values to the values obtained from the regression line
@@ -67,7 +68,7 @@ The output file will look like this:
 
 >yyyy-mm-dd b
 
-# Note:
+## Note:
 **mae**: mean absolute error
 
 **mse**: mean square error
