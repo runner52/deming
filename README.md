@@ -9,6 +9,7 @@ It is a tool that generates based on reading from an input text file:
 You may download the docker image from dockerhub
 
 `docker pull runnner/heming`
+
 `docker run <image-name> <inputFile> <outputFile>`
 
 ## Note: 
