@@ -5,6 +5,15 @@ It is a tool that generates based on reading from an input text file:
 1. slope and y-intercept of a heming regression
 2. predictions based on input value 
 
+## Docker
+You may download the docker image from dockerhub
+
+`docker pull runnner/heming`
+`docker run <image-name> <inputFile> <outputFile>`
+
+# Note: 
+You might need to run the above commands using sudo
+
 ## Requirements 
 To run the package successfully you need to have the following requirements:
 
@@ -14,6 +23,7 @@ To run the package successfully you need to have the following requirements:
 ## How to execute the tool 
 
 In your terminal run:
+
 `pip3 install python-dateutil`
 
 `pip3 install DateTime`
@@ -55,9 +65,11 @@ The output file will look like this:
 
 >...
 
->yyyy-mm-dd y
+>yyyy-mm-dd b
 
 # Note:
 **mae**: mean absolute error
 
 **mse**: mean square error
+
+**b**: predicted value
